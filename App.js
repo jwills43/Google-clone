@@ -1,17 +1,26 @@
 import React from "react"
 import './App.css';
+import Home from './pages/Home';
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import Search from "@mui/icons-material/Search";
 
 function App() {
   return (
     <div className="App">
-     <h1>Test</h1>
+      <Router>
+      
+      <Home/>
+        <Routes>
+          <Route path="/search">
+            
+          </Route>
+          <Route path="/">
+          
 
-     {/* Home */}
+          </Route>
 
-     {/* Search page */}
-
-     {/* Home */}
-
+        </Routes>
+     </Router>
 
     </div>
   );
